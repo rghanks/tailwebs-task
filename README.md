@@ -24,3 +24,9 @@ php artisan serve
 
 The Laravel sample project is now up and running! Access it at http://localhost:8000.
 
+# Login Credentials
+
+``` bash
+username -  admin
+password - 123456
+```
