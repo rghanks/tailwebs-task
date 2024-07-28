@@ -19,7 +19,7 @@
                 @foreach($students as $student)
 
                 <tr>
-                    <td>{{ $student->name }}</td>
+                <td> <span style="background:#4285f4;border-radius: 50px;color:white;padding: 5px;align-items: center;text-align: center;padding-left: 8px;"> {{ $student->name[0] }} </span> &nbsp;&nbsp; {{ $student->name }}</td>
                     <td>{{ $student->subject }}</td>
                     <td>{{ $student->marks }}</td>
                     <td>
@@ -36,9 +36,15 @@
                     </td>
                 </tr>
 
-                @endforeach                
+                @endforeach      
+                
+                
                        
             </table>
+            
+            @if ($students->isEmpty())
+                    <p style="text-align: center;padding:20px;">  There is no record...</p>
+            @endif
         </div> 
         <br/>
         <a wire:click="addStudent" href="#popup-box"> <button> Add </button></a>    
