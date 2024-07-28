@@ -11,7 +11,7 @@ Assuming you've already installed on your machine: PHP (>= 8.2.0), [Laravel](htt
 composer install
 
 # create .env file and generate the application key
-cp .env.example .env
+copy .env.example .env
 php artisan key:generate
 php arisan migrate
 ```
